@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Safety Check</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <header>
+        <div class="image">
+          <img src="medicines.png"class="img1">
+          <div class="text5">
+            <h2><span1>M</span1><span2>S</span2><span3>C</span3></h2>
+            <u><p><span1>M</span1>edicine<span2>S</span2>aftey<span3>C</span3>heck</p></u>
+              <div>
+             <button id="installButton" class="install-btn">Install</button>
+          </div>
+          </div>
+        </div>
+  </header>
+        <input type="text" id="medicineSearch" placeholder="Search for a medicine..." oninput="filterMedicines()">
+  <main
+        <div id="medicineList">
+            <!-- List of medicines will be dynamically generated here -->
+        </div>
+  </main>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(registration => {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }).catch(error => {
+      console.log('Service Worker registration failed:', error);
+    });
+  }
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

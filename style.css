@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#medicineSearch {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#medicineList {
+    text-align: left;
+    width: 100%;
+}
+
+.medicine-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.banned {
+    color: red;
+    font-weight: bold;
+}
+
+.not-banned {
+    color: green;
+    font-weight: bold;
+}
+.head{
+  height: 100px;
+  width: 100%;
+}
+.img1{
+  position: relative;
+  height: 160px;
+  width: 415px;
+  background: black;
+  
+}
+.text5{
+  position: absolute;
+  top: 0;
+  padding-top: 20px;
+  color: #FFFFFF;
+}
+.text5 h2{
+  align-self: center;
+  padding-left: 50px;
+  font-size: 30px;
+  font-family: bold;
+}
+.text5 h2 span1{
+  color: red;
+}
+.text5 h2 span2{
+  color: green;
+}
+.text5 h2 span3{
+  color: #9E4100;
+}
+.text5 p span1{
+  color: orange;
+  font-size: 20px;
+}
+.text5 p span2{
+  color: blue;
+  font-size: 20px;
+}
+.text5 p span3{
+  color: #D300FF;
+  font-size: 20px;
+}
+
+/* Install Button */
+.install-btn {
+ position: absolute;
+ top: 0;
+ margin-left: 330px;
+}
+
+.install-btn:hover {
+  background-color: #45a049;
+}
